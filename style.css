@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 54%, 11%) ;
+  font-family: 'Outfit', sans-serif;
+  overflow-x:hidden;
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+#product-image{
+  width: 100%;
+  border-radius: 10px;
+}
+
+#product-image:hover ~ .viewicon,
+#product-image:hover{
+  visibility: visible;
+  cursor:pointer; 
+}
+
+  .viewicon{
+  visibility:hidden;
+  position:absolute;
+  top:105px;
+  left:110px;
+}
+
+.creator-image{
+  height:40px;
+  /*aspect-ratio: 1/1;*/
+  border:2px solid white;
+  border-radius: 50%;
+}
+
+.container{
+  position:relative;
+  background-color: hsl(216, 50%, 16%);
+  width:275px;
+  height: auto;
+  margin: 60px auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow:6px -1px 0px 14px /*hsl(216, 50%, 16%)*/,
+    4px 3px 0px 20px ;
+}
+
+hr{
+  color:hsl(215, 32%, 27%);
+  margin:0px;
+}
+
+.rowingp{
+  display: flex;
+  flex-direction:row;
+  justify-content:centre;
+  gap:10px;
+ }
+
+.rowingp img{
+  align-self:center;
+}
+
+.priceNdate{
+  display: flex;
+  justify-content: space-between;
+  padding-top:0px;
+}
+
+.mauvetext{
+  color:hsl(215, 51%, 70%);
+}
+
+.price{
+  color:hsl(178, 100%, 50%);
+}
+
+.resizeicon{
+  height:20px;
+}
+
+.clearbot{
+  margin-top:0px;
+}
+
+.activeeffect:hover{
+  color:hsl(178, 100%, 50%);
+  cursor:pointer;
+}
+
